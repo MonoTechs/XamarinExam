@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="fei13.MyPage"
+Title="欢迎"
+>
+  <ContentPage.Content>
+    <StackLayout BackgroundColor="White" Padding="20" >
+      <Label Text="口袋医生V1.0（院内版）" TextColor="Black" Font="Large" HorizontalOptions="Center"  ></Label>
+      <Label Text="工号:" TextColor="Black"></Label>
+      <Entry Keyboard="Text" TextColor="Black"></Entry>
+      <Label Text="密码:" TextColor="Black"></Label>
+      <Entry Keyboard="Text" TextColor="Black" ></Entry>
+      <Button Id="btn_login" Text="登录" TextColor="Blue" Command="{Binding btn_login}" CommandParameter="0"></Button>
+      <Button Text="取消" TextColor="Gray"></Button>
+      <Grid>
+        <Grid.RowDefinitions>
+          <RowDefinition Height="auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="auto"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Label Text="设置日期:" Grid.Row="0" Grid.Column="0"></Label>
+        <Entry Keyboard="Text" TextColor="Black" Grid.Row="0" Grid.Column="1"></Entry>
+
+        <Label Text="设置时间:" Grid.Row="1" Grid.Column="0"></Label>
+        <Entry Keyboard="Text" TextColor="Black" Grid.Row="1" Grid.Column="1"></Entry>
+
+        <Button Text="设置" TextColor="Blue" Grid.Row="2" Grid.Column="0"></Button>
+        <Button Text="重置" TextColor="Gray" Grid.Row="2" Grid.Column="1"></Button>
+      </Grid>
+    </StackLayout>
+  </ContentPage.Content>
+
+</ContentPage>
